@@ -1,0 +1,554 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "kitchen table trivia",
+      "intents": [
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "choice",
+              "type": "CHOICE"
+            }
+          ],
+          "samples": [
+            "{choice}",
+            "is it {choice}",
+            "it's {choice}",
+            "I think it's {choice}",
+            "I think {choice}",
+            "my answer is {choice}",
+            "the answer is {choice}",
+            "I'll say {choice}",
+            "I say {choice}",
+            "letter {choice}",
+            "option {choice}",
+            "answer {choice}",
+            "I'll go with {choice}",
+            "go with {choice}",
+            "{choice} is my answer",
+            "final answer {choice}",
+            "I guess {choice}"
+          ]
+        },
+        {
+          "name": "NameIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "{name}",
+            "I'm {name}",
+            "this is {name}",
+            "my name is {name}",
+            "{name} is playing",
+            "{name}'s turn",
+            "it is {name}'s turn",
+            "{name} here",
+            "call me {name}",
+            "it's {name}'s turn",
+            "now {name}",
+            "{name} wants to play",
+            "{name} is next",
+            "next is {name}"
+          ]
+        },
+        {
+          "name": "AddPlayerIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "add {name}",
+            "add a player named {name}",
+            "add player {name}",
+            "new player {name}",
+            "add {name} to the game",
+            "add a new player named {name}"
+          ]
+        },
+        {
+          "name": "RemovePlayerIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "remove {name}",
+            "remove player {name}",
+            "delete {name}",
+            "take {name} out of the game",
+            "remove {name} from the game"
+          ]
+        },
+        {
+          "name": "SetLevelIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "level",
+              "type": "LEVEL"
+            }
+          ],
+          "samples": [
+            "give {name} {level} questions",
+            "make {name}'s questions {level}",
+            "set {name} to {level}",
+            "{level} questions for {name}",
+            "switch {name} to {level} questions",
+            "change {name} to {level} questions",
+            "give me {level} questions",
+            "switch to {level} questions"
+          ]
+        },
+        {
+          "name": "BonusRoundIntent",
+          "slots": [
+            {
+              "name": "category",
+              "type": "CATEGORY"
+            }
+          ],
+          "samples": [
+            "bonus round",
+            "play a bonus round",
+            "start a bonus round",
+            "give me a bonus round",
+            "more questions",
+            "another round",
+            "play more",
+            "keep playing",
+            "a {category} round",
+            "{category} round",
+            "play a {category} round",
+            "bonus round on {category}",
+            "give me {category} questions",
+            "ask me {category} questions",
+            "play {category}",
+            "bonus {category}",
+            "a {category} bonus round",
+            "{category} bonus round",
+            "let's do {category}",
+            "{category} please",
+            "more trivia",
+            "ask me more"
+          ]
+        },
+        {
+          "name": "LeaderboardIntent",
+          "slots": [],
+          "samples": [
+            "who's winning",
+            "what's the score",
+            "scores",
+            "the scores",
+            "leaderboard",
+            "the leaderboard",
+            "how am I doing",
+            "what are the scores",
+            "who is in the lead",
+            "who's ahead",
+            "what's my streak",
+            "streaks",
+            "who is winning",
+            "tell me the scores"
+          ]
+        },
+        {
+          "name": "ListPlayersIntent",
+          "slots": [],
+          "samples": [
+            "list players",
+            "list the players",
+            "who are the players",
+            "which players are there",
+            "who plays",
+            "tell me the players"
+          ]
+        },
+        {
+          "name": "ResetIntent",
+          "slots": [],
+          "samples": [
+            "reset the game",
+            "delete everything",
+            "forget everyone",
+            "delete all players",
+            "start over from scratch",
+            "erase all scores",
+            "delete all my data",
+            "forget all players"
+          ]
+        },
+        {
+          "name": "CategoriesIntent",
+          "slots": [],
+          "samples": [
+            "what categories are there",
+            "list categories",
+            "which categories",
+            "what are the categories",
+            "what topics are there",
+            "categories",
+            "what categories do you have"
+          ]
+        },
+        {
+          "name": "DontKnowIntent",
+          "slots": [],
+          "samples": [
+            "I don't know",
+            "pass",
+            "skip",
+            "no idea",
+            "I have no idea",
+            "I give up",
+            "tell me the answer",
+            "I'm not sure",
+            "skip this one",
+            "what's the answer",
+            "I don't know the answer"
+          ]
+        },
+        {
+          "name": "DoneIntent",
+          "slots": [],
+          "samples": [
+            "done",
+            "I'm done",
+            "we're done",
+            "that's all",
+            "that's everyone",
+            "nobody",
+            "no one",
+            "no one else",
+            "nobody else",
+            "finished",
+            "all done",
+            "we are done"
+          ]
+        },
+        {
+          "name": "BuyIntent",
+          "slots": [],
+          "samples": [
+            "buy premium",
+            "subscribe",
+            "upgrade",
+            "get premium",
+            "buy kitchen table trivia premium",
+            "sign up for premium",
+            "buy the subscription",
+            "start a free trial",
+            "start the free trial",
+            "buy the monthly plan"
+          ]
+        },
+        {
+          "name": "BuyAnnualIntent",
+          "slots": [],
+          "samples": [
+            "buy the yearly plan",
+            "buy the annual plan",
+            "buy yearly",
+            "buy annual",
+            "get the yearly plan",
+            "subscribe yearly",
+            "subscribe for a year",
+            "buy the yearly subscription",
+            "switch to yearly",
+            "switch to the yearly plan",
+            "pay yearly"
+          ]
+        },
+        {
+          "name": "WhatCanIBuyIntent",
+          "slots": [],
+          "samples": [
+            "what can I buy",
+            "what is premium",
+            "tell me about premium",
+            "what do I get with premium",
+            "what does premium include",
+            "what's in premium",
+            "what can I get"
+          ]
+        },
+        {
+          "name": "CancelSubscriptionIntent",
+          "slots": [],
+          "samples": [
+            "cancel my subscription",
+            "cancel premium",
+            "unsubscribe",
+            "stop my subscription",
+            "refund premium",
+            "I want a refund",
+            "end my subscription"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "CHOICE",
+          "values": [
+            {
+              "id": "A",
+              "name": {
+                "value": "a",
+                "synonyms": [
+                  "ay",
+                  "letter a",
+                  "option a",
+                  "the first one",
+                  "first one",
+                  "first",
+                  "number one"
+                ]
+              }
+            },
+            {
+              "id": "B",
+              "name": {
+                "value": "b",
+                "synonyms": [
+                  "bee",
+                  "be",
+                  "letter b",
+                  "option b",
+                  "the second one",
+                  "second one",
+                  "second",
+                  "number two"
+                ]
+              }
+            },
+            {
+              "id": "C",
+              "name": {
+                "value": "c",
+                "synonyms": [
+                  "see",
+                  "sea",
+                  "letter c",
+                  "option c",
+                  "the third one",
+                  "third one",
+                  "third",
+                  "number three"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "LEVEL",
+          "values": [
+            {
+              "id": "easy",
+              "name": {
+                "value": "easier",
+                "synonyms": [
+                  "easy",
+                  "kids",
+                  "kid",
+                  "simpler",
+                  "younger",
+                  "simple"
+                ]
+              }
+            },
+            {
+              "id": "regular",
+              "name": {
+                "value": "regular",
+                "synonyms": [
+                  "harder",
+                  "normal",
+                  "grown up",
+                  "adult",
+                  "hard",
+                  "grownup"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CATEGORY",
+          "values": [
+            {
+              "id": "mixed",
+              "name": {
+                "value": "mixed",
+                "synonyms": [
+                  "anything",
+                  "everything",
+                  "random",
+                  "a mix",
+                  "all categories",
+                  "any"
+                ]
+              }
+            },
+            {
+              "id": "general",
+              "name": {
+                "value": "general knowledge",
+                "synonyms": [
+                  "general",
+                  "general trivia"
+                ]
+              }
+            },
+            {
+              "id": "history",
+              "name": {
+                "value": "history",
+                "synonyms": [
+                  "historical",
+                  "american history",
+                  "world history"
+                ]
+              }
+            },
+            {
+              "id": "science",
+              "name": {
+                "value": "science",
+                "synonyms": [
+                  "the human body",
+                  "chemistry",
+                  "biology"
+                ]
+              }
+            },
+            {
+              "id": "space",
+              "name": {
+                "value": "space",
+                "synonyms": [
+                  "astronomy",
+                  "planets",
+                  "outer space",
+                  "the solar system"
+                ]
+              }
+            },
+            {
+              "id": "geography",
+              "name": {
+                "value": "geography",
+                "synonyms": [
+                  "places",
+                  "countries",
+                  "maps",
+                  "world geography",
+                  "capitals"
+                ]
+              }
+            },
+            {
+              "id": "animals",
+              "name": {
+                "value": "animals",
+                "synonyms": [
+                  "nature",
+                  "wildlife",
+                  "animal"
+                ]
+              }
+            },
+            {
+              "id": "sports",
+              "name": {
+                "value": "sports",
+                "synonyms": [
+                  "sport"
+                ]
+              }
+            },
+            {
+              "id": "food",
+              "name": {
+                "value": "food",
+                "synonyms": [
+                  "food and drink",
+                  "cooking",
+                  "cuisine"
+                ]
+              }
+            },
+            {
+              "id": "words",
+              "name": {
+                "value": "words",
+                "synonyms": [
+                  "vocabulary",
+                  "language",
+                  "spelling",
+                  "word"
+                ]
+              }
+            },
+            {
+              "id": "music",
+              "name": {
+                "value": "music",
+                "synonyms": [
+                  "musical",
+                  "songs",
+                  "composers",
+                  "instruments"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

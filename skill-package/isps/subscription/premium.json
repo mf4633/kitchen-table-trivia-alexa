@@ -1,0 +1,61 @@
+{
+  "vendorId": "",
+  "inSkillProductDefinition": {
+    "version": "1.0",
+    "type": "SUBSCRIPTION",
+    "referenceName": "premium",
+    "purchasableState": "PURCHASABLE",
+    "subscriptionInformation": {
+      "subscriptionPaymentFrequency": "MONTHLY",
+      "subscriptionTrialPeriodDays": 7
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Kitchen Table Trivia Premium",
+          "smallIconUri": "https://mf4633.github.io/kitchen-table-trivia-alexa/icon-108.png",
+          "largeIconUri": "https://mf4633.github.io/kitchen-table-trivia-alexa/icon-512.png",
+          "summary": "Unlimited bonus rounds for the whole household.",
+          "description": "Bonus rounds for everyone in the house: five trivia questions at a time in history, science, geography, space, animals, sports, food, music, words, or a mix, as many as you like. The daily question and the leaderboard stay free. Billed monthly after a free week.",
+          "examplePhrases": [
+            "Alexa, open Kitchen Table Trivia",
+            "play a bonus round"
+          ],
+          "keywords": [
+            "trivia",
+            "bonus round",
+            "family",
+            "quiz"
+          ],
+          "customProductPrompts": {
+            "purchasePromptDescription": "Kitchen Table Trivia Premium adds unlimited five-question bonus rounds for the whole household, in any category.",
+            "boughtCardDescription": "You now have Kitchen Table Trivia Premium. Say \"bonus round\" anytime."
+          }
+        }
+      },
+      "distributionCountries": [
+        "US"
+      ],
+      "pricing": {
+        "amazon.com": {
+          "releaseDate": "2026-11-09",
+          "defaultPriceListing": {
+            "price": 2.99,
+            "currency": "USD"
+          }
+        }
+      },
+      "taxInformation": {
+        "category": "INFORMATION_SERVICES"
+      }
+    },
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://mf4633.github.io/kitchen-table-trivia-alexa/privacy.html"
+        }
+      }
+    },
+    "testingInstructions": "Say \"play a bonus round\" (or \"buy premium\"). Either subscription (premium or premium_annual) unlocks bonus rounds."
+  }
+}

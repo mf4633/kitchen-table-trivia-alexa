@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Kitchen Table Trivia",
+          "summary": "A new trivia question every day for each player in the house, with streaks and a weekly leaderboard.",
+          "description": "One new trivia question a day for everyone in the house, and a weekly leaderboard to settle who knows the most.\n\nEach player answers today's question by name: \"It's Sam.\" Everyone at the same level gets the same question, so you can compare at dinner. Get it right for a point; play every day to build your streak. On Monday, Alexa announces last week's winner.\n\nYounger players can get easier questions while the grown-ups get regular ones, on the same device. If you've set up Alexa voice profiles and turn on personalization for this skill, Alexa can recognize who's playing on its own.\n\nQuestions cover history, science, geography, space, animals, sports, food, music, words, and general knowledge. Answer with the letter, A, B, or C, or just say the answer.\n\nThe daily question is free. Kitchen Table Trivia Premium adds bonus rounds for the whole household: five questions at a time, in any category, as many as you like. Monthly with a free week, or yearly.\n\nTry saying:\n- \"Alexa, open Kitchen Table Trivia\"\n- \"Who's winning?\"\n- \"Add a player named Alex\"\n- \"Give Alex easier questions\"\n- \"Play a history round\"",
+          "examplePhrases": [
+            "Alexa, open Kitchen Table Trivia",
+            "Alexa, ask Kitchen Table Trivia who's winning",
+            "Alexa, ask Kitchen Table Trivia for a history round"
+          ],
+          "keywords": [
+            "trivia",
+            "family",
+            "quiz",
+            "daily question",
+            "game",
+            "leaderboard",
+            "streak",
+            "household",
+            "history",
+            "science",
+            "geography"
+          ],
+          "smallIconUri": "https://mf4633.github.io/kitchen-table-trivia-alexa/icon-108.png",
+          "largeIconUri": "https://mf4633.github.io/kitchen-table-trivia-alexa/icon-512.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "distributionCountries": [
+        "US"
+      ],
+      "testingInstructions": "Say \"open Kitchen Table Trivia\". With no players yet, it asks for a name: say \"Sam\", then \"no\" (regular questions). Today's question follows; answer with a letter (\"B\") or the answer text. It confirms, gives the streak, and asks who's next. Say \"Alex\", then \"yes\" (easier questions) to add a second player, who gets a question from the easier set. Say \"done\" to hear the weekly leaderboard. Reopening and saying \"Sam\" again says Sam has already answered today. \"Who's winning\" reads scores and streaks. \"Give Alex regular questions\" changes level. \"Remove Alex\" deletes a player. Premium: \"play a history round\" triggers the Upsell (monthly plan with a 7-day trial); accept it in the sandbox to play a 5-question round. \"Buy the yearly plan\" buys the yearly plan instead. \"What can I buy\" and \"cancel my subscription\" are supported. Personalization (alexa::person_id:read) is optional: a recognized voice is linked to the name it gives the first time, and is greeted by name afterward. Without it, players say their name. Data stored: first names the players give, their scores and streaks, and (if personalization is on) the person ID linked to each name. \"Remove <name>\" deletes a player.",
+      "category": "KNOWLEDGE_AND_TRIVIA"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        }
+      }
+    },
+    "permissions": [
+      {
+        "name": "alexa::person_id:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": true,
+      "usesPersonalInfo": true,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://mf4633.github.io/kitchen-table-trivia-alexa/privacy.html",
+          "termsOfUseUrl": "https://mf4633.github.io/kitchen-table-trivia-alexa/terms.html"
+        }
+      }
+    }
+  }
+}
